@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Education">
+
+    <TextView
+        android:id="@+id/option1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:background="#FFFFFF"
+        android:paddingRight="100dp"
+        android:paddingTop="20dp"
+        android:text="Primary Education"
+        android:textColor="#151414"
+        android:textSize="18sp" />
+
+    <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+        android:id="@+id/primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/option1"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        app:dsb_indicatorColor="#39D7EC"
+        app:dsb_max="3"
+        app:dsb_min="1"
+        app:dsb_progressColor="#39D7EC"
+        app:dsb_rippleColor="#39D7EC"
+        app:dsb_trackColor="#39D7EC" />
+
+    <TextView
+        android:id="@+id/option2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/primary"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:background="#FFFFFF"
+        android:paddingRight="100dp"
+        android:paddingTop="20dp"
+        android:text="Secondary Education"
+        android:textColor="#151414"
+        android:textSize="18sp" />
+
+    <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+        android:id="@+id/secondary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/option2"
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true"
+        app:dsb_indicatorColor="#39D7EC"
+        app:dsb_max="3"
+        app:dsb_min="1"
+        app:dsb_progressColor="#39D7EC"
+        app:dsb_rippleColor="#39D7EC"
+        app:dsb_trackColor="#39D7EC" />
+
+    <TextView
+        android:id="@+id/option3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/secondary"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:background="#FFFFFF"
+        android:paddingRight="100dp"
+        android:paddingTop="20dp"
+        android:text="Higher Education"
+        android:textColor="#151414"
+        android:textSize="18sp" />
+
+    <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+        android:id="@+id/higher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/option3"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        app:dsb_indicatorColor="#39D7EC"
+        app:dsb_max="3"
+        app:dsb_min="1"
+        app:dsb_progressColor="#39D7EC"
+        app:dsb_rippleColor="#39D7EC"
+        app:dsb_trackColor="#39D7EC" />
+
+    <TextView
+        android:id="@+id/option4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/higher"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:background="#FFFFFF"
+        android:paddingRight="100dp"
+        android:paddingTop="20dp"
+        android:text="National Curricumum"
+        android:textColor="#151414"
+        android:textSize="18sp" />
+
+    <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+        android:id="@+id/national_curriculum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/option4"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        app:dsb_indicatorColor="#39D7EC"
+        app:dsb_max="3"
+        app:dsb_min="1"
+        app:dsb_progressColor="#39D7EC"
+        app:dsb_rippleColor="#39D7EC"
+        app:dsb_trackColor="#39D7EC" />
+
+    <TextView
+        android:id="@+id/option5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/national_curriculum"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:background="#FFFFFF"
+        android:paddingRight="100dp"
+        android:paddingTop="20dp"
+        android:text="Research Spending"
+        android:textColor="#151414"
+        android:textSize="18sp" />
+
+    <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+        android:id="@+id/research_spending"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/option5"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        app:dsb_indicatorColor="#39D7EC"
+        app:dsb_max="3"
+        app:dsb_min="1"
+        app:dsb_progressColor="#39D7EC"
+        app:dsb_rippleColor="#39D7EC"
+        app:dsb_trackColor="#39D7EC" />
+
+
+    <Button
+        android:id="@+id/record"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/research_spending"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/colorAccent"
+        android:textSize="26sp"
+        android:text="Record Changes"
+        android:textColor="#ffffff"
+        />
+
+
+
+
+</RelativeLayout>

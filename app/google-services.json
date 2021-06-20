@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "951266625990",
+    "project_id": "phases-of-democracy",
+    "storage_bucket": "phases-of-democracy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:951266625990:android:fb230a7d0b44380d78cac7",
+        "android_client_info": {
+          "package_name": "com.example.phases_of_democracy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "951266625990-0keitaupe4j1qs766mti1e25u91ta1vc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.phases_of_democracy",
+            "certificate_hash": "7ca788cacf6939fec715d301923627b6972d9fa9"
+          }
+        },
+        {
+          "client_id": "951266625990-t8b0lsh0gggguhbkhadf0sqhdrlnagg4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkWSGTzcnw_RyvCdR2RljhiuRdnyroCgg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "951266625990-t8b0lsh0gggguhbkhadf0sqhdrlnagg4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

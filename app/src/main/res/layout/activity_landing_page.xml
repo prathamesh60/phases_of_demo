@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background= "@drawable/backgr"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".LandingPage">
+
+    <include
+        layout="@layout/toolbar" />
+    <TextView
+        android:id="@+id/eco_n_dev"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+        android:paddingLeft="10dp"
+        android:paddingTop="15dp"
+        android:text="Economy And Development"
+        android:drawableLeft="@drawable/econ_icon"
+        android:drawablePadding="10dp"
+        android:textColor="#151414"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/environment"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/eco_n_dev"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+        android:paddingLeft="10dp"
+        android:paddingTop="15dp"
+        android:text="Environment"
+        android:drawableLeft="@drawable/env_icon"
+        android:drawablePadding="10dp"
+        android:textColor="#151414"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/education"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/environment"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+        android:paddingLeft="10dp"
+        android:paddingTop="15dp"
+        android:text="Education"
+        android:drawableLeft="@drawable/ed_ico"
+        android:drawablePadding="10dp"
+        android:textColor="#151414"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/foreign_policy"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/education"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+        android:paddingLeft="10dp"
+        android:paddingTop="15dp"
+        android:text="Foreign Policy"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/fo_po"
+        android:textColor="#151414"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/healthcare"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/foreign_policy"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+        android:paddingLeft="10dp"
+        android:paddingTop="15dp"
+        android:text="Healthcare"
+        android:drawableLeft="@drawable/heal_ico"
+        android:drawablePadding="10dp"
+        android:textColor="#151414"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/infrastructure"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/healthcare"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+        android:paddingLeft="10dp"
+        android:paddingTop="15dp"
+        android:text="Infrastructure"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/infra_icon"
+        android:textColor="#151414"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/safety"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/infrastructure"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+        android:paddingLeft="10dp"
+        android:paddingTop="15dp"
+        android:text="Safety"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/safe_icon"
+        android:textColor="#151414"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/taxation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/safety"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+        android:paddingLeft="10dp"
+        android:paddingTop="15dp"
+        android:text="Taxation"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/tax_icon"
+        android:textColor="#151414"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/welfare"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/safety"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+        android:paddingLeft="10dp"
+        android:paddingTop="15dp"
+        android:text="Welfare"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/welfare_icon"
+        android:textColor="#151414"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#151414"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:baselineAligned="false"
+        >
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="#151414"
+            android:text="Sept 1999"
+            android:layout_alignParentRight="true"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/revenue"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:background="#151414"
+            android:text="239 billion"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/popularity"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:background="#151414"
+            android:text="59 %"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Environment">
+
+
+    <TextView
+        android:id="@+id/option1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:background="#FFFFFF"
+        android:paddingRight="100dp"
+        android:paddingTop="20dp"
+        android:text="Environment Spending"
+        android:textColor="#151414"
+        android:textSize="18sp" />
+
+
+
+    <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+        android:id="@+id/public_parks_speaking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/option1"
+        android:layout_marginTop="30dp"
+        android:layout_centerInParent="true"
+        app:dsb_indicatorColor="#39D7EC"
+        app:dsb_max="3"
+        app:dsb_min="1"
+        app:dsb_progressColor="#39D7EC"
+        app:dsb_rippleColor="#39D7EC"
+        app:dsb_trackColor="#39D7EC" />
+
+    <TextView
+        android:id="@+id/option2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/public_parks_speaking"
+        android:layout_marginLeft="40dp"
+        android:background="#FFFFFF"
+        android:paddingRight="100dp"
+        android:paddingTop="20dp"
+        android:text="Carbon Tax"
+        android:textColor="#151414"
+        android:textSize="18sp" />
+
+
+
+    <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+        android:id="@+id/carbon_tax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/option2"
+        android:layout_marginTop="30dp"
+        android:layout_centerInParent="true"
+        app:dsb_indicatorColor="#39D7EC"
+        app:dsb_max="4"
+        app:dsb_min="1"
+        app:dsb_progressColor="#39D7EC"
+        app:dsb_rippleColor="#39D7EC"
+        app:dsb_trackColor="#39D7EC" />
+
+    <Button
+        android:id="@+id/record"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/carbon_tax"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/colorAccent"
+        android:textSize="26sp"
+        android:text="Record Changes"
+        android:textColor="#ffffff"
+        />
+
+
+</RelativeLayout>

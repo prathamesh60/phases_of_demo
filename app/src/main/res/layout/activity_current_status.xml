@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CurrentStatus">
+
+    <TextView
+        android:id="@+id/option1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:background="#FFFFFF"
+        android:paddingTop="15dp"
+        android:text="@string/revenue"
+        android:layout_centerHorizontal="true"
+        android:drawablePadding="15dp"
+        android:textColor="#151414"
+        android:textSize="18sp"
+        app:drawableLeftCompat="@drawable/revenue_icon" />
+
+    <EditText
+        android:id="@+id/revenue"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:background="#0B0202"
+        android:layout_below="@id/option1"
+        android:paddingTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:drawablePadding="10dp"
+        android:textColor="#F6F2F2"
+        android:textSize="30sp"
+        />
+
+    <TextView
+        android:id="@+id/option2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/revenue"
+        android:background="#FFFFFF"
+        android:paddingTop="15dp"
+        android:text="@string/popularity"
+        android:layout_centerHorizontal="true"
+        android:drawablePadding="15dp"
+        android:textColor="#151414"
+        android:textSize="18sp"
+        app:drawableLeftCompat="@drawable/popu_icon" />
+
+    <EditText
+        android:id="@+id/popularity"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:background="#0B0202"
+        android:layout_below="@id/option2"
+        android:paddingTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:drawablePadding="10dp"
+        android:textColor="#F6F2F2"
+        android:textSize="30sp"
+        />
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/popularity"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/colorAccent"
+        android:textSize="26sp"
+        android:text="Ok"
+        android:textColor="#ffffff"
+        />
+</RelativeLayout>
