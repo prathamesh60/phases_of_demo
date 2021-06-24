@@ -27,7 +27,7 @@ public class GameOver2 extends AppCompatActivity {
         reset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                userProfile=new User(globalClass.getUsername(),globalClass.getUseremail(),globalClass.getPassword(),1,3,2,1,2,1,3,2,1,3,2,3,3,2,3,2,2,3,2,1,1,2,3,4,1,1,1,1,3,2,1,23100, (float)32.51,0);
+                userProfile=new User(globalClass.getUsername(),globalClass.getUseremail(),globalClass.getPassword(),1,3,2,1,2,1,3,2,1,3,2,3,3,2,3,2,2,3,2,1,1,2,3,4,1,1,1,1,3,2,1,23100, (float)32.51,0,1,1,1,2,2);
                 FirebaseDatabase.getInstance().getReference("Users")
                         .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).setValue(userProfile).addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override

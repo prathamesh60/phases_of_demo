@@ -12,7 +12,7 @@
         android:id="@+id/option1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginLeft="40dp"
         android:background="#FFFFFF"
         android:paddingRight="100dp"
@@ -28,7 +28,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/option1"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="10dp"
         android:layout_centerInParent="true"
         app:dsb_indicatorColor="#39D7EC"
         app:dsb_max="3"
@@ -41,7 +41,7 @@
         android:id="@+id/option2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_below="@id/public_parks_speaking"
         android:layout_marginLeft="40dp"
         android:background="#FFFFFF"
@@ -58,7 +58,97 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/option2"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true"
+        app:dsb_indicatorColor="#39D7EC"
+        app:dsb_max="4"
+        app:dsb_min="1"
+        app:dsb_progressColor="#39D7EC"
+        app:dsb_rippleColor="#39D7EC"
+        app:dsb_trackColor="#39D7EC" />
+
+    <TextView
+        android:id="@+id/option3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/carbon_tax"
+        android:layout_marginLeft="40dp"
+        android:background="#FFFFFF"
+        android:paddingRight="100dp"
+        android:paddingTop="20dp"
+        android:text="Tree Plantation"
+        android:textColor="#151414"
+        android:textSize="18sp" />
+
+
+
+    <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+        android:id="@+id/tree_plantation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/option3"
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true"
+        app:dsb_indicatorColor="#39D7EC"
+        app:dsb_max="4"
+        app:dsb_min="1"
+        app:dsb_progressColor="#39D7EC"
+        app:dsb_rippleColor="#39D7EC"
+        app:dsb_trackColor="#39D7EC" />
+
+    <TextView
+        android:id="@+id/option4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/tree_plantation"
+        android:layout_marginLeft="40dp"
+        android:background="#FFFFFF"
+        android:paddingRight="100dp"
+        android:paddingTop="20dp"
+        android:text="Sustainable Development"
+        android:textColor="#151414"
+        android:textSize="18sp" />
+
+
+
+    <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+        android:id="@+id/sustainable_development"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/option4"
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true"
+        app:dsb_indicatorColor="#39D7EC"
+        app:dsb_max="4"
+        app:dsb_min="1"
+        app:dsb_progressColor="#39D7EC"
+        app:dsb_rippleColor="#39D7EC"
+        app:dsb_trackColor="#39D7EC" />
+
+    <TextView
+        android:id="@+id/option5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/sustainable_development"
+        android:layout_marginLeft="40dp"
+        android:background="#FFFFFF"
+        android:paddingRight="100dp"
+        android:paddingTop="20dp"
+        android:text="Renewable Energy"
+        android:textColor="#151414"
+        android:textSize="18sp" />
+
+
+
+    <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+        android:id="@+id/renewable_energy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/option5"
+        android:layout_marginTop="10dp"
         android:layout_centerInParent="true"
         app:dsb_indicatorColor="#39D7EC"
         app:dsb_max="4"
@@ -71,7 +161,7 @@
         android:id="@+id/record"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:layout_below="@id/carbon_tax"
+        android:layout_below="@id/renewable_energy"
         android:layout_marginTop="20dp"
         android:backgroundTint="@color/colorAccent"
         android:textSize="26sp"

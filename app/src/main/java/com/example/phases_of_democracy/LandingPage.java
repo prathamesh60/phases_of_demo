@@ -35,6 +35,7 @@ public class LandingPage extends AppCompatActivity {
     public TextView date;
     public ImageView nextbutton;
     public ImageView logout;
+    public ImageView lead_boa;
     public FirebaseUser user;
     public DatabaseReference reference;
     private String userId;
@@ -56,6 +57,7 @@ public class LandingPage extends AppCompatActivity {
         welfare =(TextView) findViewById(R.id.welfare);
         economy=(TextView)  findViewById(R.id.eco_n_dev);
         nextbutton=(ImageView) findViewById(R.id.next) ;
+        lead_boa=(ImageView) findViewById(R.id.leaderboard);
         logout=(ImageView)  findViewById(R.id.logout);
         revenue=(TextView) findViewById(R.id.revenue);
         popu=(TextView)  findViewById(R.id.popularity);
@@ -175,6 +177,13 @@ public class LandingPage extends AppCompatActivity {
                // Toast.makeText(LandingPage.this,"You clicked on logout", Toast.LENGTH_SHORT).show();
                 FirebaseAuth.getInstance().signOut();
                 startActivity(new Intent(LandingPage.this, MainActivity.class));
+            }
+        });
+
+        lead_boa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(LandingPage.this,Leaderboard.class));
             }
         });
 

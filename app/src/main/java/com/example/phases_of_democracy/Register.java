@@ -88,7 +88,7 @@ public class Register extends AppCompatActivity {
                            @Override
                            public void onComplete(@NonNull Task<AuthResult> task) {
                                if(task.isSuccessful()){
-                                  User userProfile=new User(username,useremail,userpassword,1,3,2,1,2,1,3,2,1,3,2,3,3,2,3,2,2,3,2,1,1,2,3,4,1,1,1,1,3,2,1,23100, (float)32.51,0);
+                                  User userProfile=new User(username,useremail,userpassword,1,3,2,1,2,1,3,2,1,3,2,3,3,2,3,2,2,3,2,1,1,2,3,4,1,1,1,1,3,2,1,23100, (float)32.51,0,1,1,1,2,2);
                                    FirebaseDatabase.getInstance().getReference("Users")
                                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).setValue(userProfile).addOnCompleteListener(new OnCompleteListener<Void>() {
                                        @Override
@@ -134,6 +134,11 @@ public class Register extends AppCompatActivity {
                                                globalClass.setUnemp_benefits(userProfile.unemp_benefits);
                                                globalClass.setPension(userProfile.pension);
                                                globalClass.setEvent_no(userProfile.event_no);
+                                               globalClass.setTree_plantation(userProfile.tree_plantation);
+                                               globalClass.setSustainable_development(userProfile.sustainable_development);
+                                               globalClass.setRenewable_energy(userProfile.renewable_energy);
+                                               globalClass.setHealth_awareness(userProfile.health_awareness);
+                                               globalClass.setHealth_infra(userProfile.health_infra);
                                                startActivity(new Intent(Register.this,PopActivity.class));
                                                progressBar.setVisibility(view.INVISIBLE);
                                            }

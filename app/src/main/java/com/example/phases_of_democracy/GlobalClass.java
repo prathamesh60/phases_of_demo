@@ -26,8 +26,55 @@ public class GlobalClass extends Application {
      int birth_con;
      int infra;
      int toll_load;
-     int law_enf;
+
+    public void setTree_plantation(int tree_plantation) {
+        this.tree_plantation = tree_plantation;
+    }
+
+    public void setSustainable_development(int sustainable_development) {
+        this.sustainable_development = sustainable_development;
+    }
+
+    public void setRenewable_energy(int renewable_energy) {
+        this.renewable_energy = renewable_energy;
+    }
+
+    public void setHealth_awareness(int health_awareness) {
+        this.health_awareness = health_awareness;
+    }
+
+    public void setHealth_infra(int health_infra) {
+        this.health_infra = health_infra;
+    }
+
+    int law_enf;
      int dis_man;
+
+    public int getTree_plantation() {
+        return tree_plantation;
+    }
+
+    public int getSustainable_development() {
+        return sustainable_development;
+    }
+
+    public int getRenewable_energy() {
+        return renewable_energy;
+    }
+
+    public int getHealth_awareness() {
+        return health_awareness;
+    }
+
+    public int getHealth_infra() {
+        return health_infra;
+    }
+
+    int tree_plantation;
+     int sustainable_development;
+     int renewable_energy;
+     int health_awareness;
+     int health_infra;
 
     public int getCorporate_tax() {
         return corporate_tax;

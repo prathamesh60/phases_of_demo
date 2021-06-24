@@ -15,15 +15,15 @@
               android:src="@drawable/logout_icon"
               android:layout_alignParentLeft="true"
               />
-         <TextView
-             android:id="@+id/title"
+         <ImageView
              android:layout_width="wrap_content"
              android:layout_height="match_parent"
-             android:text="Phases Of Democracy"
+             android:id="@+id/leaderboard"
+             android:src="@drawable/winning"
              android:layout_centerHorizontal="true"
-             android:textColor="#FFFFFF"
-             android:textSize="20dp"
-             android:layout_marginTop="15dp"/>
+             />
+
+
 
          <ImageView
              android:layout_width="wrap_content"

@@ -29,6 +29,9 @@ public class Healthcare extends AppCompatActivity {
     public DiscreteSeekBar f_s;
     public DiscreteSeekBar m_w;
     public DiscreteSeekBar s_s;
+    public DiscreteSeekBar h_a;
+    public DiscreteSeekBar h_f;
+
     public Button record;
     public User userProfile;
 
@@ -44,6 +47,8 @@ public class Healthcare extends AppCompatActivity {
         f_s=(DiscreteSeekBar) findViewById(R.id.healthcare_spending);
         m_w=(DiscreteSeekBar) findViewById(R.id.vaccination);
         s_s=(DiscreteSeekBar) findViewById(R.id.birth_control);
+        h_a=(DiscreteSeekBar) findViewById(R.id.health_awareness);
+        h_f=(DiscreteSeekBar) findViewById(R.id.health_infrastructure);
         reference.child(userId).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -53,6 +58,8 @@ public class Healthcare extends AppCompatActivity {
                     f_s.setProgress(userProfile.heal_spe);
                     m_w.setProgress(userProfile.vacci);
                     s_s.setProgress(userProfile.birth_con);
+                    h_a.setProgress(userProfile.health_awareness);
+                    h_f.setProgress(userProfile.health_infra);
 
 
 
@@ -71,6 +78,8 @@ public class Healthcare extends AppCompatActivity {
                 userProfile.heal_spe=f_s.getProgress();
                 userProfile.vacci=m_w.getProgress();
                 userProfile.birth_con=s_s.getProgress();
+                userProfile.health_awareness=h_a.getProgress();
+                userProfile.health_infra=h_f.getProgress();
 
                 FirebaseDatabase.getInstance().getReference("Users")
                         .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).setValue(userProfile).addOnCompleteListener(new OnCompleteListener<Void>() {

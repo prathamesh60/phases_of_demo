@@ -342,7 +342,48 @@ public class CurrentStatus extends AppCompatActivity {
                         v=Integer.parseInt(val);
                         sum=sum+w*v;
 
-                        FinalPop=sum/231;
+                        JSONObject innerObject31=array.getJSONObject(31);
+                        weight=innerObject31.getString("weightage");
+                        val=innerObject31.getString("t"+(userProfile.tree_plantation));
+
+                        w=Integer.parseInt(weight);
+                        v=Integer.parseInt(val);
+                        sum=sum+w*v;
+
+                        JSONObject innerObject32=array.getJSONObject(32);
+                        weight=innerObject32.getString("weightage");
+                        val=innerObject32.getString("t"+(userProfile.sustainable_development));
+
+                        w=Integer.parseInt(weight);
+                        v=Integer.parseInt(val);
+                        sum=sum+w*v;
+
+                        JSONObject innerObject33=array.getJSONObject(33);
+                        weight=innerObject33.getString("weightage");
+                        val=innerObject33.getString("t"+(userProfile.renewable_energy));
+
+                        w=Integer.parseInt(weight);
+                        v=Integer.parseInt(val);
+                        sum=sum+w*v;
+
+                        JSONObject innerObject34=array.getJSONObject(34);
+                        weight=innerObject34.getString("weightage");
+                        val=innerObject34.getString("t"+(userProfile.health_awareness));
+
+                        w=Integer.parseInt(weight);
+                        v=Integer.parseInt(val);
+                        sum=sum+w*v;
+
+                        JSONObject innerObject35=array.getJSONObject(35);
+                        weight=innerObject35.getString("weightage");
+                        val=innerObject35.getString("t"+(userProfile.health_infra));
+
+                        w=Integer.parseInt(weight);
+                        v=Integer.parseInt(val);
+                        sum=sum+w*v;
+
+
+                        FinalPop=sum/252;
                         Log.i("TAG","Popularity="+FinalPop);
                         Log.i("TAG","Popularity="+sum);
 
@@ -994,6 +1035,102 @@ public class CurrentStatus extends AppCompatActivity {
                                 FinalRev=FinalRev+c;
                             }
                         }
+                        if(userProfile.tree_plantation!=globalClass.getTree_plantation())
+                        {
+                            String reduction=innerObject31.getString(rang);
+                            String share=innerObject31.getString("Share");
+                            int r=Integer.parseInt(reduction);
+                            int s=Integer.parseInt(share);
+                            if(userProfile.tree_plantation>globalClass.getTree_plantation())
+                            {
+                                float c=r*s;
+                                c/=100;
+                                FinalRev=FinalRev-c;
+                            }
+                            else
+                            {
+                                float c=r*s;
+                                c/=100;
+                                FinalRev=FinalRev+c;
+                            }
+                        }
+                        if(userProfile.sustainable_development!=globalClass.getSustainable_development())
+                        {
+                            String reduction=innerObject32.getString(rang);
+                            String share=innerObject32.getString("Share");
+                            int r=Integer.parseInt(reduction);
+                            int s=Integer.parseInt(share);
+                            if(userProfile.sustainable_development>globalClass.getSustainable_development())
+                            {
+                                float c=r*s;
+                                c/=100;
+                                FinalRev=FinalRev-c;
+                            }
+                            else
+                            {
+                                float c=r*s;
+                                c/=100;
+                                FinalRev=FinalRev+c;
+                            }
+                        }
+                        if(userProfile.renewable_energy!=globalClass.getRenewable_energy())
+                        {
+                            String reduction=innerObject33.getString(rang);
+                            String share=innerObject33.getString("Share");
+                            int r=Integer.parseInt(reduction);
+                            int s=Integer.parseInt(share);
+                            if(userProfile.renewable_energy>globalClass.getRenewable_energy())
+                            {
+                                float c=r*s;
+                                c/=100;
+                                FinalRev=FinalRev-c;
+                            }
+                            else
+                            {
+                                float c=r*s;
+                                c/=100;
+                                FinalRev=FinalRev+c;
+                            }
+                        }
+                        if(userProfile.health_awareness!=globalClass.getHealth_awareness())
+                        {
+                            String reduction=innerObject34.getString(rang);
+                            String share=innerObject34.getString("Share");
+                            int r=Integer.parseInt(reduction);
+                            int s=Integer.parseInt(share);
+                            if(userProfile.health_awareness>globalClass.getHealth_awareness())
+                            {
+                                float c=r*s;
+                                c/=100;
+                                FinalRev=FinalRev-c;
+                            }
+                            else
+                            {
+                                float c=r*s;
+                                c/=100;
+                                FinalRev=FinalRev+c;
+                            }
+                        }
+                        if(userProfile.health_infra!=globalClass.getHealth_infra())
+                        {
+                            String reduction=innerObject35.getString(rang);
+                            String share=innerObject35.getString("Share");
+                            int r=Integer.parseInt(reduction);
+                            int s=Integer.parseInt(share);
+                            if(userProfile.health_infra>globalClass.getHealth_infra())
+                            {
+                                float c=r*s;
+                                c/=100;
+                                FinalRev=FinalRev-c;
+                            }
+                            else
+                            {
+                                float c=r*s;
+                                c/=100;
+                                FinalRev=FinalRev+c;
+                            }
+                        }
+
 
 
                     }

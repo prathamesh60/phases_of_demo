@@ -38,12 +38,16 @@ public class User {
     public int unemp_benefits;
     public int pension;
     public int event_no;
-
+    public int tree_plantation;
+    public int sustainable_development;
+    public int renewable_energy;
+    public int health_awareness;
+    public  int health_infra;
     public User(){
 
     }
 
-    public User(String username, String useremail, String password, int farmer_sub, int minimum_wage, int stimulus_spending, int env_spending, int carbon_tax, int prim_edu, int sec_edu, int hig_edu, int nat_curr, int res_spe, int def_spe, int tar_imp, int bor_cont, int heal_spe, int vacci, int birth_con, int infra, int toll_load, int law_enf, int dis_man, int low_income, int middle_income, int high_income, int sal_tax, int bus_tax,int corporate_tax, int cap_gain, int inh_tex, int prop_tax, int unemp_benefits, int pension,float revenue,float popularity,int event_no) {
+    public User(String username, String useremail, String password, int farmer_sub, int minimum_wage, int stimulus_spending, int env_spending, int carbon_tax, int prim_edu, int sec_edu, int hig_edu, int nat_curr, int res_spe, int def_spe, int tar_imp, int bor_cont, int heal_spe, int vacci, int birth_con, int infra, int toll_load, int law_enf, int dis_man, int low_income, int middle_income, int high_income, int sal_tax, int bus_tax,int corporate_tax, int cap_gain, int inh_tex, int prop_tax, int unemp_benefits, int pension,float revenue,float popularity,int event_no,int tree_plantation,int sustainable_development,int renewable_energy,int health_awareness,int health_infra) {
         this.username = username;
         this.useremail = useremail;
         this.password = password;
@@ -81,5 +85,11 @@ public class User {
         this.revenue=revenue;
         this.popularity=popularity;
         this.event_no=event_no;
+        this.tree_plantation=tree_plantation;
+        this.sustainable_development=sustainable_development;
+        this.renewable_energy=renewable_energy;
+        this.health_awareness=health_awareness;
+        this.health_infra=health_infra;
+
     }
 }

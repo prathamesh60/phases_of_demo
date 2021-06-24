@@ -201,6 +201,11 @@ public class PopActivity extends AppCompatActivity {
                             globalClass.setUnemp_benefits(userProfile.unemp_benefits);
                             globalClass.setPension(userProfile.pension);
                             globalClass.setEvent_no(userProfile.event_no);
+                            globalClass.setTree_plantation(userProfile.tree_plantation);
+                            globalClass.setSustainable_development(userProfile.sustainable_development);
+                            globalClass.setRenewable_energy(userProfile.renewable_energy);
+                            globalClass.setHealth_awareness(userProfile.health_awareness);
+                            globalClass.setHealth_infra(userProfile.health_infra);
 
                             startActivity(new Intent(PopActivity.this,LandingPage.class));
 
